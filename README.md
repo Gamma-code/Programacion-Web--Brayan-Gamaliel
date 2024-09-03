@@ -2,7 +2,9 @@
 ## Mis ejercios de Paginas Web
 ### Hecho por: Brayan Gamaliel Torres Mendoza
 
-3.  [03: Listas, multimedia y tablas](03_listas_multimedia_tablas/mi%20primera%20pagina%20web.html)
+
+1.  [02: Listas, multimedia y tablas](02_listas_multimedia_tablas/index.html)
+2.  [03: Listas, multimedia y tablas](03_formulario_y_metadatos/index.html)
 
 
 

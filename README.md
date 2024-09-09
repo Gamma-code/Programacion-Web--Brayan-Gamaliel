@@ -2,7 +2,7 @@
 ## Mis ejercios de Paginas Web
 ### Hecho por: Brayan Gamaliel Torres Mendoza
 
-
+bxcf
 
 1.  [03: Listas, multimedia y tablas](02_listas_multimedia_tablas/index.html)
 2.  [04: Formularios y Metadatos](03_formularios_y_metadatos/index.html)

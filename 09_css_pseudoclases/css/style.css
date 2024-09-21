@@ -1,0 +1,315 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    height: 100vh;
+    background: #f4f7f6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Apartado de Pseudoelementos*/
+form {
+  margin: 0% auto;
+  max-width: 500px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgba(0, 0, 1, 0.5);
+  border: 5px solid rgb(82, 18, 119);
+}
+
+input, textarea {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(35, 19, 81);
+  border-radius: 10px;
+
+  color: #333;
+  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+legend{
+    text-align: center;
+    color: #4618AC;
+    margin-bottom: 5px;
+    display: block;
+    
+}
+
+
+.enviar {
+  display: block;
+  padding: 3% 30%;
+  background-color: rgb(35, 19, 81);
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+}
+
+label {
+  color: #4618AC;
+  margin-bottom: 5px;
+  display: block;
+}
+
+legend::before {
+  content: "📞";
+}
+
+.motivo::after {
+  content: " 🛠";
+  
+  
+}
+
+
+.Problema::after {
+  content: " *Apartado Opcional*";
+  color: rgb(82, 18, 119);
+  font-style: normal;
+  font-size: 0.7em;
+  margin-left: 30px;
+}
+
+p::first-line {
+  color: #ff0015;
+  font-size: 0.6em;
+}
+
+::selection {
+  background: rgb(35, 19, 81);
+  color: white;
+}
+
+
+/*Apartado de Pseudoclases*/
+
+
+.formulariobtn {
+    background: white;
+    color: #2072dd;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    width: 250px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.iniciobtn {
+    background: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #4618AC;
+}
+.redbtn {
+    background: #4618AC;
+    color: white;
+    
+    padding: 10px;
+    display: block;
+    width: 200px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 2px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(173, 4, 173);
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    
+}
+
+a:link {
+    background:  white;
+    color: #4618AC;
+}
+
+a:visited {
+    background: rgb(82, 18, 119);
+    color: white;
+}
+
+a:hover{
+    background: #4618AC;
+    color: white;
+}
+
+a:active {
+    background: rgb(173, 4, 173);
+    color: rgb(33, 33, 33);
+}
+
+input:focus, textarea:focus {
+    outline: 4px solid rgb(82, 18, 119);
+    border: 1px solid rgb(82, 18, 119);
+}
+
+
+input:disabled {
+    background: rgb(82, 18, 119);
+    
+}
+
+form:hover {
+    box-shadow: 0 18px 18px rgb(82, 18, 119);
+}
+
+h1:first-child {
+    color: cornflowerblue;
+}
+
+
+
+
+
+
+
+
+
+.box-ejemplo {
+    display: inline-block;
+    /*background-color: aquamarine; Lo quité para que se viera todo azul completo (puesto en el header)*/
+    margin: 0;
+    padding: 1%;
+    font-size: initial; /*Se utiliza para restablecer el tamaño de la fuente*/
+    font-weight: bold;
+    vertical-align: top; /*Se alinea con la parte superior*/
+    color: white; /*Por el fondo, ponemos las letras en blanco*/
+}
+
+.logo {
+    width: auto;
+    height: 70px; /*Se establece que tendrá un alto de 40 pixeles (como es un header queremos que siempre mida lo mismo de alto)*/
+    padding: 0 0 0 1%; /*Le da un espacio pequeño al lado izquierdo de la imagen*/
+}
+
+.title {
+    width: 43%;
+    text-align: center;
+    line-height: 40px; /*Modificamos la altura de la línea para que el título se coloque en el centro (verticalmente).*/
+    font-size: 20px;
+}
+
+.contact-link {
+    width: 25%;
+    text-align: right;
+    line-height: 40px; /*Modificamos la altura de la línea para que los enlaces se coloquen en el centro (verticalmente).*/
+}
+
+.logo-image {
+    margin-top: 2%; /*Con esta línea hacemos que la imagen se coloque en medio del header*/
+    height: 80%; /*Abarca el 80% de lo alto, para que tenga espacio a los lados*/
+}
+
+.nav-link {
+    color: white; /*Modificamos el color del enlace*/
+    font-size:30px;
+}
+
+header {
+    background-color: rgb(35, 19, 81);
+    box-shadow: 5px 5px 15px 0 whitesmoke; 
+    display: flex; /* Usamos flexbox para alinear elementos horizontalmente */
+    justify-content: space-between; /* Espacio entre el logo y los enlaces */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.fondo-azul {
+    background-color: rgb(90, 90, 233);
+}
+
+
+
+/*Parametros para mis tarjetas*/
+.tarjeta {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    font-family: Arial, serif;
+  }
+  
+  .tarjeta img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+  }
+  
+  .tarjeta-content {
+    padding: 16px;
+  }
+  
+  /*El titulo de la tarjeta*/
+  .tarjeta h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .tarjeta p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  .botoncito {
+    display: block;
+    padding: 15px 10px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+  }
+
+
+
+
+
+  .link-container {
+    width: 100%;
+   
+    text-align: center;
+}
+
+.link-container a {
+    display: inline-block;
+    margin: 0 20px; 
+}
+  
+  
+

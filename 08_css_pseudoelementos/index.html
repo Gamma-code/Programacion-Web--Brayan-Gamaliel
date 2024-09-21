@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Documento con formulario para registro de usuarios">
+        <meta name="author" content="Brayan Gamaliel">
+        <meta name="keywords" content="UABCS, Form, Register">
+        <link rel="stylesheet" href="css/style.css">
+        <base href="https://www.Soporte?Tecnico.com/" target="_blank">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        
+        <title>Formulario de Registro</title>
+    </head>
+    <body>
+        
+
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend><strong>Formulario de Contacto</strong></legend>
+                <label for="nombre">Nombre</label>
+                <input 
+                    type="nombre" 
+                    id="nombre" 
+                    name="nombre" 
+                    placeholder="Ingresa tu nombre completo"
+                    value=""
+                    required
+                    
+                ><br><br>
+
+                <label>
+                    Descripción
+                     <br>
+                    <textarea 
+                        required
+                        name="descripcion"
+                        rols="10"
+                        cols="40%"
+                        placeholder="Ingresa tu descripción">
+                    </textarea>
+                </label>
+                <br><br>
+
+                <label class="motivo"  for="motivo">Motivo de Contacto</label>
+                <select name="motivo" id="motivo">
+                    <optgroup label="Soporte">
+                        <option value="problema">Problema técnico</option>
+                        <option value="reembolso">Solicitud de reembolso</option>
+                    </optgroup>
+                    <optgroup label="Ventas">
+                        <option value="consulta">Consulta sobre producto</option>
+                        <option value="cotizacion">Solicitud de cotización</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <label class="Problema"   for="Problema">Problemas comunes</label>
+                <input minlength="5" maxlength="100" id="Problema" type="text" list="Problemas">
+                <datalist id="Problemas" name="Problema">
+                    <option>Problema tecnico con el software</option>
+                    <option>Error de inicio de sesion</option>
+                    <option>Pagina no funciona</option>
+                    
+                </datalist><br><br>
+                
+                <p>*los campos son obligatorios</p>
+                <button class="enviar"  type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

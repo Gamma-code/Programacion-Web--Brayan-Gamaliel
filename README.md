@@ -9,7 +9,8 @@
 3.  [05: Css Basico](05_css_basico/index.html)
 4.  [06: Css dimensiones](06_css_dimesiones/index.html)
 5.  [07: Css position](07_css_position/index.html)
-
+6.  [08: Css pseudoelementos](08_css_pseudoelementos/index.html)
+7.  [09: Css pseudoclase](09_css_pseudoclases/index.html)
 
 
 

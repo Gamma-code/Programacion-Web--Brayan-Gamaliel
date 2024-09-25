@@ -1,0 +1,212 @@
+p {
+    color: white;
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    
+    background-image: url(../img/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+.box-ejemplo {
+    display: inline-block;
+    /*background-color: aquamarine; Lo quité para que se viera todo azul completo (puesto en el header)*/
+    margin: 0;
+    padding: 1%;
+    font-size: initial; /*Se utiliza para restablecer el tamaño de la fuente*/
+    font-weight: bold;
+    vertical-align: top; /*Se alinea con la parte superior*/
+    color: white; /*Por el fondo, ponemos las letras en blanco*/
+}
+
+.logo {
+    width: auto;
+    height: 70px; /*Se establece que tendrá un alto de 40 pixeles (como es un header queremos que siempre mida lo mismo de alto)*/
+    padding: 0 0 0 1%; /*Le da un espacio pequeño al lado izquierdo de la imagen*/
+}
+
+.title {
+    width: 43%;
+    text-align: center;
+    line-height: 40px; /*Modificamos la altura de la línea para que el título se coloque en el centro (verticalmente).*/
+    font-size: 20px;
+}
+
+.contact-link {
+    width: 25%;
+    text-align: right;
+    line-height: 40px; /*Modificamos la altura de la línea para que los enlaces se coloquen en el centro (verticalmente).*/
+}
+
+.logo-image {
+    margin-top: 2%; /*Con esta línea hacemos que la imagen se coloque en medio del header*/
+    height: 80%; /*Abarca el 80% de lo alto, para que tenga espacio a los lados*/
+}
+
+.nav-link {
+    color: white; /*Modificamos el color del enlace*/
+    font-size:30px;
+}
+
+/*Link OFERTAS en color rojo*/
+.special-link {
+  color: red;
+  font-size:30px; 
+}
+
+
+header {
+    background-color: rgb(1, 33, 105);
+    box-shadow: 5px 5px 15px 0 whitesmoke; 
+    display: flex; /* Usamos flexbox para alinear elementos horizontalmente */
+    justify-content: space-between; /* Espacio entre el logo y los enlaces */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.fondo-azul {
+    background-color: rgb(90, 90, 233);
+}
+
+
+
+/*Parametros para mis tarjetas*/
+.tarjeta {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    font-family: Arial, serif;
+  }
+  
+  .tarjeta img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+  }
+  
+  .tarjeta-content {
+    padding: 16px;
+  }
+  
+  /*El titulo de la tarjeta*/
+  .tarjeta h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .tarjeta p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  .botoncito {
+    display: block;
+    padding: 15px 10px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+  }
+
+  /*Puse todas mis tarjetas en un contenedor y use flex*/
+  .tarjetas-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px; 
+    padding: 20px;
+  }
+
+
+
+  .link-container {
+    width: 100%;
+   
+    text-align: center;
+}
+
+.link-container a {
+    display: inline-block;
+    margin: 0 20px; 
+}
+  
+
+
+ /*Submenu*/
+ 
+ ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li:hover a{
+  color: black ;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 250px;
+  z-index: 90;
+  top: 100%; 
+  left: 0;
+  
+  padding: 0;
+  box-shadow: 3px 3px 5px 0 rgb(35, 19, 81);
+  
+}
+
+
+
+li:hover .submenu{
+  display: block;
+}
+
+.submenu li {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid rgb(230, 229, 229);
+}
+
+.submenu li:hover {
+  background: rgb(230, 229, 229);
+}

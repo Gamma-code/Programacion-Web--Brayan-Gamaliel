@@ -86,7 +86,9 @@ header {
 */
 
 /*---Mi header Usando Grid---*/
+
 header {
+  grid-area: header;
   background-color: rgb(1, 33, 105);
   box-shadow: var(--box-shadow-general);
   display: grid;
@@ -230,9 +232,9 @@ li:hover .submenu {
 .grid-container {
   display: grid;
   grid-template-areas:
-      "header"
-      "main-content"
-      "footer ";
+      "header header header"
+      "main-content main-content main-content"
+      "footer footer footer ";
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: auto 1fr 50px;
   gap: 10px;
@@ -240,13 +242,7 @@ li:hover .submenu {
   padding: 20px;
 }
 
-.header {
-  grid-area: header;
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+
 
 .header h1 {
   margin-bottom: 10px;

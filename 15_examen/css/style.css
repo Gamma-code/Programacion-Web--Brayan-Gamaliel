@@ -9,16 +9,20 @@
   --box-shadow-submenu: 3px 3px 5px 0 var(--color-principal, black);
 }
 
-p {
-  color: white;
+* {
+    margin: 0;
+    padding: 0;
+    
 }
+
+
 
 body {
   padding: 0;
   margin: 0;
   font-family: var(--fuente-principal);
   font-size: 24px;
-  background-image: url(../img/Fondo.jpg);
+  /*background-image: url(../img/Fondo.jpg);*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -94,7 +98,7 @@ header {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center; 
-  padding: 0 20px;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -234,12 +238,13 @@ li:hover .submenu {
   grid-template-areas:
       "header header header"
       "main-content main-content main-content"
-      "footer footer footer ";
+      "footer footer footer";
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: auto 1fr 50px;
   gap: 10px;
   min-height: 100vh;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -313,4 +318,98 @@ li:hover .submenu {
 }
 
 
+/*mi pagina responsiva para dispositivos moviles*/
 
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    text-align: center;
+    position: static;
+    
+  }
+
+  .logo {
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 18px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contact-link {
+    
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  
+  .tarjeta {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .tarjetas-grid-contenedor {
+    grid-template-columns: 1fr; 
+    gap: 10px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .botoncito {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+
+
+/**/
+
+.bg-custom {
+    background-color: rgb(1, 33, 105); /*color del nav*/
+}
+
+.navbar-nav .nav-link {
+    color: white; 
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700; /*color al pasar el mouse*/
+}
+
+.navbar-toggler {
+    background-color: white !important; 
+    
+}

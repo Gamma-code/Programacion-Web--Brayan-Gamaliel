@@ -23,7 +23,7 @@
 
 ## Unidad 4 - JavaScript
 
-15. [EJercicio_1_calculadora](Ejercicio_1_calculadora/index.html)
+15. [Ejercicio_1_calculadora](Ejercicio_1_calculadora/index.html)
 
     
 

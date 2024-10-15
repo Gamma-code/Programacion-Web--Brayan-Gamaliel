@@ -1,5 +1,5 @@
 # Programación Web 2024
-## Mis ejercios de Paginas Web
+## Mis ejercicios de Paginas Web
 ### Hecho por: Brayan Gamaliel Torres Mendoza
 
 
@@ -15,6 +15,15 @@
 11. [13: Css grid](13_css_funciones_grid/index.html)
 12. [14: Css responsivo](14_css_responsivo/index.html)
 13. [15: Examen](15_examen/index.html)
+
+### Mi Ejercicio de Tarjeta
+14. [15: css_tarjeta](css_tarjeta/index.html) 
+
+
+## Unidad 4 - JavaScript
+
+15. [EJercicio_1_calculadora](Ejercicio_1_calculadora/index.html)
+
     
 
 

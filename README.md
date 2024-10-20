@@ -14,17 +14,15 @@
 11. [13: Css grid](13_css_funciones_grid/index.html)
 12. [14: Css responsivo](14_css_responsivo/index.html)
 13. [15: Examen](15_examen/index.html)
-
 ### Mi Ejercicio de Tarjeta
-14. [15: css_tarjeta](css_tarjeta/index.html) 
-
+14. [13: css_tarjeta](css_tarjeta/index.html)
 
 
 
 ## Unidad 4 - JavaScript
 
-15. [Ejercicio_1_calculadora](Ejercicio_1_calculadora/index.html)
-
+15. [16:Ejercicio_1_calculadora](Ejercicio_1_calculadora/index.html)
+16. [17: Ejercicio_2_Manipulacion_de_estilos](Ejercicio_2_Manipulacion_de_estilos/index.html)
     
 
 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Calculadora -->
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+
+                <!--Creo mis botones-->
+                <button onclick="añadirValor('7')">7</button>
+                <button onclick="añadirValor('8')">8</button>
+                <button onclick="añadirValor('9')">9</button>
+                <button onclick="añadirValor('/')">/</button>
+                <button onclick="añadirValor('4')">4</button>
+                <button onclick="añadirValor('5')">5</button>
+                <button onclick="añadirValor('6')">6</button>
+                <button onclick="añadirValor('*')">*</button>
+                <button onclick="añadirValor('1')">1</button>
+                <button onclick="añadirValor('2')">2</button>
+                <button onclick="añadirValor('3')">3</button>
+                <button onclick="añadirValor('-')">-</button>
+                <button onclick="añadirValor('0')">0</button>
+                <button onclick="calcular()">=</button>
+                <button onclick="Borrar()">C</button>
+                <button onclick="añadirValor('+')">+</button>
+
+            </div>
+        </div>  
+        
+        
+        <!--Historial-->
+        <div class="historial">
+            <h3>Historial de cálculos</h3>
+            <div id="historialPantalla"></div>
+        </div>
+    </div>
+
+
+    <script>
+        let display = document.getElementById('display');
+        let historialPantalla = document.getElementById('historialPantalla');
+        let valorEntrada = '';
+        let history = [];
+
+
+        function añadirValor(value) {
+            valorEntrada += value;
+            display.value = valorEntrada;
+        }
+
+        function calcular() {
+            try {
+                //Aqui recibo los valores de entrada
+                let resultado = eval(valorEntrada);
+                let operation = `${valorEntrada} = ${resultado}`;
+
+                history.push(operation);
+                actualizar();
+
+                display.value = resultado;
+                valorEntrada = '';
+            } catch (error) {
+                display.value = 'Error';
+            }
+            
+        }
+
+        function Borrar() {
+            valorEntrada = '';
+            display.value = '';
+        }
+
+        function actualizar() {
+            historialPantalla.innerHTML = '';
+            history.forEach(op => {
+                let p = document.createElement('p');
+                p.textContent = op;
+                historialPantalla.appendChild(p);
+            });
+        }
+
+    </script>
+
+
+</body>
+</html>

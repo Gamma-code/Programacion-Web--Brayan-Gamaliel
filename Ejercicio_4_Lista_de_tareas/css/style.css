@@ -1,0 +1,70 @@
+
+
+
+
+.contenedor {
+    width: 700px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #2D5753;
+    border-radius: 5px;
+    text-align: center;
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    
+    background-image: url('../img/Papel.png');
+    background-size: cover;
+}
+
+#lista-tareas {
+    list-style-type: none;
+    padding: 0;
+    max-height: 400px; /*Aqui le asigno el tamaño de mi scroll*/
+    overflow-y: auto; /*Con esta linea, hago mis Scroll Vertical*/
+}
+
+#lista-tareas li {
+    display: flex;
+    
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd; /*Le puse una linea inferior a cada tarea para que se vea aetheric*/
+}
+
+
+/*Cuando se marca el checkbox*/
+.completada {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/*Este es mi boton para agregar tareas*/
+button {
+    background-color: #6d8f71;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+button.eliminar {
+    background-color: #a84040;
+    border-radius: 20px;
+    margin-left: auto; /*ya descubri como poner este boton a la derecha*/
+}
+
+input[type="checkbox"] {
+    margin-right: 20px;
+    margin-left: 100px;
+}
+
+/*Mi titulo*/
+h2 {
+    font-weight: 900;
+    color: #6d8f71;
+    margin-top: 110px; 
+}

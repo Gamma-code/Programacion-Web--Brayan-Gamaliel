@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Mi lista de tareas</h2>
+        <ul id="lista-tareas"></ul>
+        <input type="text" id="entrada-tarea" placeholder="Ingresa el texto...">
+        <button id="agregar-tarea">Agregar</button>
+    </div>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+        const listaTareas = document.getElementById('lista-tareas');
+        const entradaTarea = document.getElementById('entrada-tarea');
+        const botonAgregarTarea = document.getElementById('agregar-tarea');
+
+        // Cargar tareas desde localStorage
+        const cargarTareas = () => {
+            const tareas = JSON.parse(localStorage.getItem('tareas')) || [];
+            tareas.forEach(tarea => {
+                crearElementoTarea(tarea.texto, tarea.completada);
+            });
+        };
+
+        // Guardar localStorage COOKIES
+        const guardarTareas = () => {
+            const tareas = [];
+            document.querySelectorAll('#lista-tareas li').forEach(elementoTarea => {
+                const texto = elementoTarea.querySelector('span').textContent;
+                const completada = elementoTarea.querySelector('input[type="checkbox"]').checked;
+                tareas.push({ texto, completada });
+            });
+            localStorage.setItem('tareas', JSON.stringify(tareas));
+        };
+
+
+
+        // Creao mis elementos de tarea
+        const crearElementoTarea = (texto, completada = false) => {
+            const li = document.createElement('li');
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = completada;
+            checkbox.addEventListener('change', () => {
+                textoTarea.classList.toggle('completada', checkbox.checked);
+                guardarTareas();
+
+            });
+
+            const textoTarea = document.createElement('span');
+            textoTarea.textContent = texto;
+            if (completada) {
+                textoTarea.classList.add('completada');
+            }
+
+
+            //Boton para eliminar mis tareas
+            const botonEliminar = document.createElement('button');
+            botonEliminar.textContent = 'Eliminar';
+            botonEliminar.className = 'eliminar';
+            botonEliminar.addEventListener('click', () => {
+                listaTareas.removeChild(li);
+                guardarTareas();
+            });
+
+            
+            li.appendChild(checkbox);
+            li.appendChild(textoTarea);
+            li.appendChild(botonEliminar);
+            listaTareas.appendChild(li);
+        };
+
+        // Agregar nueva tarea
+        botonAgregarTarea.addEventListener('click', () => {
+            const texto = entradaTarea.value.trim();
+            if (texto) {
+                crearElementoTarea(texto);
+                entradaTarea.value = '';
+                guardarTareas();
+            }
+        });
+
+        // Cargar tareas cuando la página se carga
+        cargarTareas();
+    });
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

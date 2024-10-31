@@ -24,6 +24,7 @@
 16. [17: Ejercicio_2_Manipulacion_de_estilos](Ejercicio_2_Manipulacion_de_estilos/index.html)
 17. [18: Ejercicio_3_Calculadora_visual](Ejercicio_3_Calculadora_visual/index.html)
 18. [19: Ejercicio_4_Lista_de_tareas](Ejercicio_4_Lista_de_tareas/index.html)
+19. [20: Ejercicio_5_Tarjeta_de_datos base de gatos](Ejercicio_5_Tarjeta_de_datos_gatos/detalles.html)
     
 
 
